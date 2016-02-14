@@ -72,7 +72,7 @@ SimpleForm.setup do |config|
   # config.error_notification_id = nil
 
   # Series of attempts to detect a default label method for collection.
-  # config.collection_label_methods = [ :to_label, :name, :title, :to_s ]
+   config.collection_label_methods = [ :to_label, :name, :title, :to_s ]
 
   # Series of attempts to detect a default value method for collection.
   # config.collection_value_methods = [ :id, :to_s ]
@@ -141,5 +141,6 @@ SimpleForm.setup do |config|
   # config.cache_discovery = !Rails.env.development?
 
   # Default class for inputs
-  # config.input_class = nil
+  #config.input_class = nil
 end
+

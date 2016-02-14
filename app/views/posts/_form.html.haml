@@ -1,7 +1,12 @@
-= simple_form_for @post do |f|
-	= f.input :image
-	= f.input :title
-	= f.input :link
-	= f.input :description
+%body
+  .border-form-div
+    = simple_form_for @post, class: "form-group" do |f|
+      .form-group
+        = f.input :image, label: "image"
+        = f.input :title, label: false, placeholder: "title"
+        = f.input :link, label: false, placeholder: "link"
+        = f.input :description, label: false, placeholder: "description"
+      .form-button
+        = f.button :submit, class: "button"
 
-	= f.button :submit
+

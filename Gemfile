@@ -15,6 +15,7 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'paperclip', '~> 4.2.0'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
+gem 'puma'
 
 group :development, :test do
   gem 'sqlite3'

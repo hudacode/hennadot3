@@ -1,0 +1,394 @@
+/*
+
+ */
+/* line 6, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: "Proxima Nova";
+  font-weight: 100;
+}
+
+/* line 11, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100;
+}
+
+/* line 15, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 20, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 25, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 29, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+.button {
+  border: 1px solid #9B9B9B;
+  padding: .7rem 1.25rem;
+  border-radius: .3rem;
+  outline: none;
+  background: white;
+  color: #9B9B9B;
+}
+
+/* line 38, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+header {
+  width: 100%;
+  padding: 2rem 0;
+  border-bottom: 1px solid #E4E4E4;
+}
+/* line 42, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+header #logo {
+  float: left;
+  font-size: 1.75rem;
+}
+/* line 45, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+header #logo a {
+  color: #333233;
+  text-decoration: none;
+}
+/* line 48, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+header #logo a:hover {
+  color: #50A7C7;
+}
+/* line 53, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+header nav {
+  float: right;
+}
+/* line 55, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+header nav a {
+  margin-left: 1.5rem;
+  line-height: 2;
+  color: #9B9B9B;
+  text-decoration: none;
+}
+/* line 60, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+header nav a:hover {
+  color: #50A7C7;
+}
+
+/* line 67, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+.textbox {
+  background: white;
+  border: 1px double #DDD;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #333;
+  color: #666;
+  outline: none;
+  height: 25px;
+  width: 275px;
+}
+
+/* User sign in and sign forms. */
+/* line 79, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+.border-form-div {
+  max-width: 178px;
+  padding: 29px 54px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* line 92, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+.border-form-div .form-signin-heading,
+.border-form-div .checkbox {
+  margin-bottom: 10px;
+}
+
+/* line 96, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+.border-form-div input[type="text"],
+.border-form-div input[type="email"],
+.border-form-div input[type="password"] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
+
+/* line 104, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+.border-form-div2 {
+  max-width: 300px;
+  padding: 19px 29px 29px;
+  margin: 0 auto 20px;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* line 117, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+.border-form-div .form-signin-heading,
+.border-form-div .checkbox {
+  margin-bottom: 10px;
+}
+
+/* line 121, /home/nitrous/code/muse/app/assets/stylesheets/application.css.scss */
+.border-form-div input[type="text"],
+.border-form-div input[type="email"],
+.border-form-div input[type="password"] {
+  font-size: 16px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 7px 9px;
+}
+
+/* line 1, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#intro {
+  margin: 2.75rem 0 1.75rem 0;
+  text-align: center;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+/* line 6, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#intro span {
+  font-size: 1.25rem;
+  color: #9B9B9B;
+}
+
+/* line 12, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#posts .post {
+  background: #F8F9FA;
+  width: 30%;
+  float: left;
+  margin: 1rem 1.5%;
+  border: 1px solid #E4E4E4;
+  border-radius: 0.3rem;
+}
+/* line 19, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#posts .post .post_image {
+  height: 200px;
+  overflow: hidden;
+}
+/* line 22, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#posts .post .post_image img {
+  width: 100%;
+  border-radius: .3rem .3rem 0 0;
+}
+/* line 28, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 {
+  margin: 0;
+  font-weight: 100;
+  padding: 1rem 5%;
+  border-bottom: 1px solid #E4E4E4;
+  font-size: 1.25rem;
+}
+/* line 34, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 a {
+  text-decoration: none;
+  color: #333233;
+}
+/* line 37, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content h2 a:hover {
+  color: #50A7C7;
+}
+/* line 42, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data {
+  padding: .75rem 5%;
+  color: #969696;
+}
+/* line 45, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .username, #posts .post .post_content .data .buttons {
+  margin: 0;
+  font-size: .8rem;
+}
+/* line 49, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .username {
+  float: left;
+}
+/* line 52, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .buttons {
+  float: right;
+}
+/* line 54, /home/nitrous/code/muse/app/assets/stylesheets/home.css.scss */
+#posts .post .post_content .data .buttons span {
+  margin-left: .5rem;
+}
+
+/* line 1, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show {
+  padding-top: 2rem;
+}
+/* line 3, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show .post_image_description {
+  width: 50%;
+  float: left;
+  margin-right: 5%;
+}
+/* line 8, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show .post_data {
+  width: 15%;
+  float: left;
+}
+/* line 11, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show .post_data .button {
+  width: 100%;
+  display: inline-block;
+  padding: .75rem 0;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #969696;
+}
+/* line 19, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show .post_data .button:hover {
+  color: #50A7C7;
+  border: 1px solid #50A7C7;
+}
+/* line 24, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show .post_data .data {
+  width: 100%;
+  display: block;
+  padding: .75rem 0;
+  border-bottom: 1px solid #E9E9E9;
+  text-decoration: none;
+  color: #969696;
+  margin: 0;
+}
+/* line 34, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post {
+  width: 25%;
+  margin-left: 5%;
+  margin-top: -3.2rem;
+  float: left;
+}
+/* line 39, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post h3 {
+  font-size: 1rem;
+}
+/* line 42, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post .post {
+  background: #F8F9FA;
+  border: 1px solid #E4E4E4;
+  border-radius: 0.3rem;
+}
+/* line 46, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post .post .post_image {
+  height: 200px;
+  overflow: hidden;
+}
+/* line 49, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post .post .post_image img {
+  width: 100%;
+  border-radius: .3rem .3rem 0 0;
+}
+/* line 55, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post .post .post_content h2 {
+  margin: 0;
+  font-weight: 100;
+  padding: 1rem 5%;
+  border-bottom: 1px solid #E4E4E4;
+  font-size: 1.25rem;
+}
+/* line 61, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post .post .post_content h2 a {
+  text-decoration: none;
+  color: #333233;
+}
+/* line 64, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post .post .post_content h2 a:hover {
+  color: #50A7C7;
+}
+/* line 69, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post .post .post_content .data {
+  padding: .75rem 5%;
+  color: #969696;
+}
+/* line 72, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post .post .post_content .data .username, #post_show #random_post .post .post_content .data .buttons {
+  margin: 0;
+  font-size: .8rem;
+}
+/* line 76, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post .post .post_content .data .username {
+  float: left;
+}
+/* line 79, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post .post .post_content .data .buttons {
+  float: right;
+}
+/* line 81, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show #random_post .post .post_content .data .buttons span {
+  margin-left: .5rem;
+}
+/* line 89, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show h1 {
+  margin: 0;
+  color: #333233;
+}
+/* line 93, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show img {
+  width: 100%;
+  border-radius: .3rem;
+}
+/* line 97, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show .username {
+  color: #969696;
+  margin: 0 0 1.5rem 0;
+}
+/* line 101, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#post_show .description {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #969696;
+}
+
+/* line 109, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#comments {
+  padding-bottom: 4rem;
+  width: 50%;
+}
+/* line 112, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#comments .comment_count {
+  border-bottom: 1px solid #E9E9E9;
+  padding-bottom: .5rem;
+  margin-bottom: 0;
+}
+/* line 117, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#comments .comment {
+  padding: 2rem 0;
+  border-bottom: 1px solid #E9E9E9;
+  padding-left: 5%;
+}
+/* line 121, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#comments .comment .username {
+  font-size: 1.3rem;
+  color: #333233;
+  margin: 0 0 .5rem 0;
+}
+/* line 126, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#comments .comment .content {
+  margin: 0;
+  color: #969696;
+}
+/* line 131, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#comments .comment_content {
+  margin-top: 2.5rem;
+}
+/* line 133, /home/nitrous/code/muse/app/assets/stylesheets/post.css.scss */
+#comments .comment_content textarea {
+  width: 100%;
+  margin: 1rem 0;
+  min-height: 150px;
+  border: 1px solid #E4E4E4;
+  background: #F8F9FA;
+  border-radius: 0.3rem;
+}

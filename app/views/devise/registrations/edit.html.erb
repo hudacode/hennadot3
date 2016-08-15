@@ -6,15 +6,38 @@
 
   <div class="form-group">
     <%= f.input :name, required: true, autofocus: true, label: false, placholder: "name" %>
+  </div>
 
+  <div class="form-group">
     <%= f.input :email, required: true, autofocus: true, label: false, placeholder: "email" %>
+  </div>
 
-    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-      <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
-    <% end %>
+  <p><b>Current location: <%= @user.full_address_location %></b></p>
+  <p><b>Current latitude: <%= @user.latitude %></b></p>
+  <p><b>Current longitude: <%= @user.longitude %></b></p>
+  <p><%= link_to 'Google Maps link', google_maps_location_link(@user.latitude, @user.longitude), target: '_blank' %></p>
+  <%= embedded_google_map(@user.latitude, @user.longitude) %>
+  <div class="form-group">
+    <%= f.select :country, [], { include_blank: false }, { class: 'crs-country', 'data-region-id' => 'region-selector' } %>
+    <!-- <%= f.input :country, collection: CountryStateSelect.countries_collection %> -->
+  </div>
 
+  <div class="form-group">
+    <%= f.select :city, [], { include_blank: false }, { id: 'region-selector' } %><!-- 
+    <%= options = { form: f, field_names: { :country => :country, :state => :city } }
+    f.input :city, CountryStateSelect.state_options(options) %> -->
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+  <% end %>
+  <div class="form-group">
     <%= f.input :password, autocomplete: "off", label: false, placeholder: "password", hint: "leave it blank if you don't want to change it", required: false %>
+  </div>
+  <div class="form-group">
     <%= f.input :password_confirmation, label: false, placeholder: "password confirmation", required: false %>
+  </div>
+  <div class="form-group">
     <%= f.input :current_password, label: false, placeholder: "current password", hint: "we need your current password to confirm your changes", required: true %>
   </div>
 

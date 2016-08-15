@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141122203413) do
+ActiveRecord::Schema.define(version: 20160815142016) do
 
   create_table "comments", force: true do |t|
     t.text     "content"
@@ -51,6 +51,10 @@ ActiveRecord::Schema.define(version: 20141122203413) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "country"
+    t.string   "city"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

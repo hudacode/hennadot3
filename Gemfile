@@ -40,3 +40,6 @@ end
 # Geolocation
 gem 'geocoder'
 gem 'country_state_select', '3.0.1'
+
+# fake data
+gem 'faker'

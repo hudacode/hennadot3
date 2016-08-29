@@ -1,5 +1,6 @@
 #post_show
 	%h1= @post.title
+	%p.location= @post.user.full_address_location
 	%p.username
 		Shared by
 		= @post.user.name

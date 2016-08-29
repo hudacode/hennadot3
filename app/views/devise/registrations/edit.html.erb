@@ -19,13 +19,10 @@
   <%= embedded_google_map(@user.latitude, @user.longitude) %>
   <div class="form-group">
     <%= f.select :country, [], { include_blank: false }, { class: 'crs-country', 'data-region-id' => 'region-selector' } %>
-    <!-- <%= f.input :country, collection: CountryStateSelect.countries_collection %> -->
   </div>
 
   <div class="form-group">
-    <%= f.select :city, [], { include_blank: false }, { id: 'region-selector' } %><!-- 
-    <%= options = { form: f, field_names: { :country => :country, :state => :city } }
-    f.input :city, CountryStateSelect.state_options(options) %> -->
+    <%= f.select :city, [], { include_blank: false }, { id: 'region-selector' } %>
   </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>

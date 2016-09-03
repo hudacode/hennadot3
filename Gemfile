@@ -27,3 +27,9 @@ group :production do
   gem 'pg'
   gem  'rails_12factor'
 end
+
+# Background processing
+gem 'sidekiq'
+gem 'sidekiq-failures'
+gem 'sidekiq-status'
+gem 'sinatra', :require => nil

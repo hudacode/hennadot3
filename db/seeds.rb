@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+User.create(email: Faker::Internet.email, password: 'user1234', password_confirmation: 'user1234', name: Faker::Name.name, city: 'California', country: 'United States')
+5.times do
+    User.first.posts.create(title: Faker::Lorem.word, description: Faker::Lorem.paragraph(2), link: Faker::Internet.url, image: URI.parse(Faker::Avatar.image))
+end

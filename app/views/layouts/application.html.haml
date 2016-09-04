@@ -13,6 +13,9 @@
       #logo
         = link_to image_tag("H2.jpg", :width => 75, :height => 75), root_path
         = link_to "henna dot", root_path
+      #search
+        = form_tag search_posts_path, method: :get do
+          = text_field_tag(:query, params[:query], autocomplete: 'off', tabindex: "1")
       %nav
         - if user_signed_in?
           = link_to "Sign out", destroy_user_session_path, :method => :delete, class: "button"

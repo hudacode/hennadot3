@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 	before_action :find_post, only: [:show, :edit, :update, :destroy, :upvote, :downvote]
-	before_action :authenticate_user!, except: [:index, :show]
+	before_action :authenticate_user!, except: [:index, :show, :search]
 
 	def index
 		@posts = Post.all.order("created_at DESC")
@@ -52,10 +52,18 @@ class PostsController < ApplicationController
 		redirect_to :back
 	end
 
+	def search
+		search_posts_by_location
+	end
+
 	private
 
 	def find_post
 		@post = Post.find(params[:id])
+	end
+
+	def search_posts_by_location
+		@posts = Post.search(params[:query], limit: 300, page: params[:page], per_page: 30)
 	end
 
 	def post_params

@@ -6,6 +6,10 @@ class User < ActiveRecord::Base
     has_many :posts
     has_many :comments
 
+    validates :name, :email,                presence: true
+    validates :email,                       format: { with: Devise::email_regexp }
+
+
     geocoded_by :full_address_location 
     after_validation :geocode
 

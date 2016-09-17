@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160815142016) do
+ActiveRecord::Schema.define(version: 20160917122416) do
 
-  create_table "comments", force: true do |t|
+  create_table "comments", force: :cascade do |t|
     t.text     "content"
     t.integer  "post_id"
     t.integer  "user_id"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20160815142016) do
   add_index "comments", ["post_id"], name: "index_comments_on_post_id"
   add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
-  create_table "posts", force: true do |t|
+  create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.string   "link"
     t.text     "description"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20160815142016) do
     t.datetime "image_updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -55,12 +55,13 @@ ActiveRecord::Schema.define(version: 20160815142016) do
     t.float    "longitude"
     t.string   "country"
     t.string   "city"
+    t.string   "region"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
-  create_table "votes", force: true do |t|
+  create_table "votes", force: :cascade do |t|
     t.integer  "votable_id"
     t.string   "votable_type"
     t.integer  "voter_id"

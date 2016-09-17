@@ -6,8 +6,8 @@ class User < ActiveRecord::Base
     has_many :posts
     has_many :comments
 
-    validates :name, :email,                presence: true
-    validates :email,                       format: { with: Devise::email_regexp }
+    validates :name, :email, :country, :region, :city,                  presence: true
+    validates :email,                                                   format: { with: Devise::email_regexp }
 
 
     geocoded_by :full_address_location 
@@ -15,6 +15,6 @@ class User < ActiveRecord::Base
 
 
     def full_address_location
-        [city, country].join(", ")
+        [city, region, country].join(", ")
     end
 end

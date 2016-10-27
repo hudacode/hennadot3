@@ -8,6 +8,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
     private
 
     def send_welcome_email
-        UserMailer.welcome_email(@user).deliver_later if @user.persisted?
+        UserMailer.welcome_email(@user).deliver_now if @user.persisted?
     end
 end

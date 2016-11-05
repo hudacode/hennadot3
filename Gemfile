@@ -16,7 +16,7 @@ gem 'paperclip', '~> 4.2.0'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 gem 'puma'
-gem 'aws-sdk', '< 2.0'
+gem 'aws-sdk', '~> 2.3'
 gem 'font-awesome-rails'
 
 group :development do

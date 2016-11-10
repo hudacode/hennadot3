@@ -12,11 +12,11 @@ gem 'haml', '~> 4.0.5'
 gem 'simple_form'
 gem 'devise', '~> 3.4.1'
 gem 'acts_as_votable', '~> 0.10.0'
-gem 'paperclip', '~> 4.2.0'
+gem 'paperclip', '~> 2.3'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 gem 'puma'
-gem 'aws-sdk', '< 2.0'
+gem 'aws-sdk'
 gem 'font-awesome-rails'
 
 group :development do
